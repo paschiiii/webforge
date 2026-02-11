@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebForge | Registrierung</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+
+    <div class="auth-wrapper">
+        <div class="auth-card">
+
+            <div class="auth-header">
+                <h1>WebForge</h1>
+                <p>Erstelle dein Konto und starte dein Projekt.</p>
+            </div>
+
+            <form id="registerForm">
+
+                <div class="input-group">
+                    <label for="email">E-Mail Adresse</label>
+                    <input type="email" id="email" placeholder="deine@email.de" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Passwort</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="checkbox" required>
+                    <label for="checkbox">
+                        Ich akzeptiere die
+                        <a href="agb.html" class="legal-link">AGB</a>
+                        und
+                        <a href="datenschutz.html" class="legal-link">Datenschutzerklärung</a>
+                    </label>
+                </div>
+
+                <button type="submit" class="primary-btn">Konto erstellen</button>
+
+                <div class="divider">
+                    <span>oder</span>
+                </div>
+
+                <button type="button" class="oauth-btn google" onclick="window.location.href='/api/auth/google'">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg">Mit Google registrieren</button>
+                <button type="button" class="oauth-btn discord" onclick="window.location.href='/api/auth/discord'">
+                    <img src="https://www.svgrepo.com/show/353655/discord-icon.svg">Mit Discord registrieren</button>
+
+            </form>
+
+            <p id="message" class="form-message"></p>
+
+            <div class="auth-footer">
+                <span>Bereits ein Konto?</span>
+                <a href="login.html">Jetzt anmelden</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

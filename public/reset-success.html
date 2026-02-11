@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebForge | Passwort geändert</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+
+<div class="auth-wrapper">
+    <div class="auth-card">
+
+        <div class="auth-header">
+            <h1>Passwort erfolgreich geändert</h1>
+        </div>
+
+        <div class="success-box">
+            <p>Dein Passwort wurde erfolgreich aktualisiert.</p>
+            <p>Du wirst in wenigen Sekunden zum Login weitergeleitet.</p>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    setTimeout(() => {
+        window.location.href = "login.html";
+    }, 4000);
+</script>
+
+</body>
+</html>
